@@ -9,35 +9,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: darkcyan;
+    background-color: rgb(249, 226, 230);
     padding: 20px 20px;
 }
 
 .brandtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: .5rem;
+    font-style: oblique;
 }
 
 .navlinks ul {
     margin: 0;
     padding: 0;
     display: flex;
+    font-size: 19px;
+    font-style: oblique;
 }
 
 .navlinks li {
     list-style: none;
+    /* transition: all 0.02s; */
 }
 
 .navlinks li a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 1rem;
     display: block;
 }
 
 .navlinks li:hover {
-    background-color: aqua;
-
+    background-color: rgba(255, 192, 203, 0);
+    border-bottom: 2px solid rgb(252, 143, 161);
 }
 .toggle-button {
     position: absolute;
@@ -94,44 +98,41 @@
 /* //NAV BAR DONE// */
 
 .room {
-    /* position: relative; */
+    
     background-image: url(../freeimg/family.jpg);
-    background-color: beige;
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    
     position: relative;
-    /* top: -20px; */
     background-position: center;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 0px 30px 130px;
     
 }
 .room-container1{
-    width: 600px;
-    border: 1px solid red;
+    width: 50%;
     height: auto;
     margin-top: 160px;
     
 }
 .room-container1 h3{
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    font-weight: 200;
+    font-weight: 300;
 }
 .room-container1 h1{
     font-size: 70px;
     color: white;
     font-family: 'Playfair Display', serif;
 }
-.room-contaainer2{
+.room-container2{
     background-color: white;
-    width: 340px;
-    height: 450px;
+    width: 33%;
+    height: 60vh;
     /* border: 1px solid red; */
 }
 .room-emp{
@@ -148,20 +149,36 @@
 .room-btn-1{
     background-color: palevioletred;
     color: white;
+    border-radius: 6px;
+    transition: all 0.5s;
+
 }
 .room-btn-2{
     margin-left: 10px;
     background-color: white;
     color: black;
+    border-radius: 6px;
+    transition: all 0.5s;
 }
+
+.room-btn-1:hover {
+    background-color: rgba(235, 196, 196, 0.699);
+    border: 2px solid pink;
+}
+
+.room-btn-2:hover {
+    background-color: rgba(255, 255, 255, 0.699);
+    border: 2px solid white;
+}
+
 .exp{
-    border: 1px solid red ;
+    /* border: 1px solid red ; */
     height: auto;
     width: 100%;
 }
 .exp-container{
     display: flex;
-    background-color: rgba(245, 245, 220, 0.489);
+    /* background-color: rgba(245, 245, 220, 0.489); */
     position: relative;
     width: 100%;
     margin-top: -120px;
@@ -169,13 +186,17 @@
 .exp-container  > div {
     height: 500px;
     width: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 30px;
     border-radius: 12px;
     display: flex;
     background-color: aliceblue;
     background-repeat: no-repeat;
     /* min-width: 100px; */
+}
+
+.exp-container  > div:hover {
+    background-color: rgba(175, 216, 248, 0.652);
 }
 
 .exp-map {
@@ -297,3 +318,83 @@
     display: flex;
 }
 
+/* APPOINTMENT FORM */
+
+.appointment-form {
+    /* border: 1px red solid; */
+    height: 60vh;
+
+}
+.form-title {
+    /* border: 1px blue solid; */
+    margin: 25px 17px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rest-of-form {
+    /* border: 1px solid green; */
+}
+
+.sub-form-line1 {
+    display: flex;
+
+}
+.cluster{
+    width: 100%;
+    margin: 4px 17px;
+    /* border: 1px solid red; */
+}
+
+#full-name{
+    padding: 4px 17px;
+}
+
+.sub-form-line2 {
+    /* border: 2px solid yellow; */
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+.cluster select {
+    width: 100%;
+    height: 45px;
+    /* border: 2px greenyellow solid; */
+    
+}
+.sub-form-line3 {
+    display: flex;
+    
+}
+.rest-of-form input{
+    width: 100%;
+    height: 40px;
+}
+div select {
+    width: 100%;
+    height: 100%;
+}
+.form-end-title {
+    margin: 20px 17px;
+    /* border: 1px solid pink; */
+    background-color: rgba(243, 122, 142, 0.872);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 12px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.form-end-title:hover {
+    background-color: rgba(251, 196, 196, 0.468);
+    color: rgb(232, 64, 92);
+    border: 1px solid rgb(232, 64, 92);
+    font-weight: 5px;
+    font-size: 15px;
+}
