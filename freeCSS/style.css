@@ -132,7 +132,7 @@
     background-color: white;
     width: 340px;
     height: 450px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .room-emp{
     display: flex;
